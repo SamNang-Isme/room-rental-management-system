@@ -1,0 +1,29 @@
+<div class="login-container">
+  <h2>Room Rental Management System</h2>
+
+  <form (ngSubmit)="login()">
+
+    <div>
+      <label>Username</label>
+      <input
+        type="text"
+        name="username"
+        [(ngModel)]="username"
+        placeholder="Enter username">
+    </div>
+
+    <div>
+      <label>Password</label>
+      <input
+        type="password"
+        name="password"
+        [(ngModel)]="password"
+        placeholder="Enter password">
+    </div>
+
+    <button type="submit">
+      Login
+    </button>
+
+  </form>
+</div>
